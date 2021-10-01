@@ -1,9 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Observable } from "rxjs";
-import { ROLE } from "../model/role";
 import { global } from "./global";
-import { stringify } from "@angular/compiler/src/util";
 
 @Injectable()
 export class RoleService{
