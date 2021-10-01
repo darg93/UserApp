@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/service/user.service';
 import { RoleService } from 'src/app/service/role.service';
 import { Subject } from 'rxjs';
-import { User } from 'src/app/model/user';
+import { USER } from 'src/app/model/user';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Role } from 'src/app/model/role';
+import { ROLE } from 'src/app/model/role';
 
 @Component({
   selector: 'app-create',
@@ -14,11 +14,11 @@ import { Role } from 'src/app/model/role';
 })
 export class CreateComponent implements OnInit {
 
-  public user: User;
+  public user: USER;
   public roles: any;
 
   constructor(private _userService:UserService, private _roleService:RoleService, private _activatedRoute: ActivatedRoute, private _route:ActivatedRoute, private _router:Router) { 
-    this.user = new User(1,1,"","");
+    this.user = new USER(1,1,"","");
   }
 
   ngOnInit(): void {

@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ROUTING } from './app.routes';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { CommonModule } from "@angular/common";
 import { FormsModule } from '@angular/forms';
 import { DataTablesModule } from "angular-datatables";
@@ -16,7 +15,6 @@ import { CreateComponent } from './components/create/create.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     UsersComponent,
     SearchComponent,
     UserComponent,

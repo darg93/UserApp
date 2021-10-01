@@ -1,4 +1,4 @@
-export class User{
+export class USER{
     constructor(
         public id_usuario:number,
         public id_rol:number,

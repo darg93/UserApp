@@ -1,0 +1,18 @@
+<div class="container col-md-12 mt-3">
+    <h1>{{title}}</h1>
+
+    <form class="col-md-5 ml-0 pl-0" #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control"  #name #nombre="ngModel" [(ngModel)]="user.nombre">
+        </div>
+        <br>
+        <input type="submit" value="Submit" class="btn btn-success">
+        <br><br>
+        <input type="button" (click)="name.value=''" value="Clear" class="btn btn-warning">
+    </form>
+    <br>
+    <button>
+        <a class="buttontitle" href="/home">Home</a> 
+    </button>
+</div>
